@@ -31,14 +31,7 @@ Modern smartphones increasingly use randomized MAC addresses to enhance user pri
 
 ## 📊 Key Findings
 
-- The iPhone showed more **aggressive and consistent** MAC randomization across most scenarios.
-- Samsung was **more selective**, possibly balancing privacy with power efficiency.
+- The iPhone showed more aggressive and consistent MAC randomization across most scenarios.
+- Samsung was more selective, possibly balancing privacy with power efficiency.
 - No probe requests were observed when Wi-Fi was OFF or power-saving was ON.
-- Randomization behavior strongly depends on both **device design** and **dynamic state**.
-
-## 🔒 Privacy Implications
-
-Understanding MAC randomization patterns is crucial for:
-- Designing better privacy-preserving network protocols
-- Evaluating user exposure in public Wi-Fi environments
-- Informing users about the limitations of current privacy mechanisms
+- Randomization behavior strongly depends on both device design and dynamic state.
