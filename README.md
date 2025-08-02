@@ -1,2 +1,44 @@
-# Wifi-Mac-Randomization-Analysis
-Experimental analysis of MAC address randomization in Wi-Fi probe requests using real-world traces from iPhone 14 Pro Max and Samsung Galaxy A36. Captures and insights were obtained using Wireshark in monitor mode under varied device states.
+# Wi-Fi MAC Randomization Analysis
+
+This repository contains a study on MAC address randomization behavior in Wi-Fi probe requests, using empirical data from two smartphones: an iPhone 14 Pro Max and a Samsung Galaxy A36.
+
+## 📋 Overview
+
+Modern smartphones increasingly use randomized MAC addresses to enhance user privacy during Wi-Fi network discovery. This project investigates how randomization varies across:
+
+- Device manufacturers
+- OS and hardware versions
+- Operational conditions (Wi-Fi status, screen state, power-saving mode)
+
+## 🔬 Experiment Setup
+
+- **Devices Tested:**
+  - iPhone 14 Pro Max
+  - Samsung Galaxy A36
+
+- **Tooling:**
+  - Wireshark (monitor mode)
+  - ASUS laptop with Wi-Fi adapter supporting 802.11 capture
+
+- **Conditions:**
+  - 6 different combinations of Wi-Fi ON/OFF, screen ON/OFF, and power-saving ON/OFF
+  - Each test lasted ~20 minutes, under controlled indoor conditions on Wi-Fi channel 2
+
+## 📁 Files
+
+- `*.pcap`: Raw Wi-Fi packet captures from various scenarios
+- `WI_Report.Asal_Abbasnejad.Mohmmadreza_Zamani.pdf`: Full report describing methodology, results, and conclusions
+
+## 📊 Key Findings
+
+- The iPhone showed more **aggressive and consistent** MAC randomization across most scenarios.
+- Samsung was **more selective**, possibly balancing privacy with power efficiency.
+- No probe requests were observed when Wi-Fi was OFF or power-saving was ON.
+- Randomization behavior strongly depends on both **device design** and **dynamic state**.
+
+## 🔒 Privacy Implications
+
+Understanding MAC randomization patterns is crucial for:
+- Designing better privacy-preserving network protocols
+- Evaluating user exposure in public Wi-Fi environments
+- Informing users about the limitations of current privacy mechanisms
